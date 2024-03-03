@@ -27,7 +27,7 @@ class RoomDetailFragment : Fragment() {
                 tvName.text = name
                 tvStudy.text = study
                 imgHouse.loadImage(img)
-                Toast.makeText(requireContext(),room.toString(), Toast.LENGTH_SHORT).show()
+                requireContext().makeToast(room.name)
             }
         }
     }
