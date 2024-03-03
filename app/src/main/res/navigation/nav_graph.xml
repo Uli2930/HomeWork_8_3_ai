@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/houseFragment">
+
+    <fragment
+        android:id="@+id/houseFragment"
+        android:name="com.geeks.homework_8_3_ai.HouseFragment"
+        android:label="fragment_house"
+        tools:layout="@layout/fragment_house" >
+        <action
+            android:id="@+id/action_houseFragment_to_roomFragment"
+            app:destination="@id/houseDetailingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/houseDetailingFragment"
+        android:name="com.geeks.homework_8_3_ai.RoomDetailFragment"
+        android:label="fragment_house_detailing"
+        tools:layout="@layout/fragment_room_detailing" />
+
+</navigation>
